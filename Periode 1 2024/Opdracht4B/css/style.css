@@ -1,0 +1,63 @@
+/* Bestaande styling */
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  
+  /* Voeg hier de nieuwe styling voor het ol-element toe */
+  ol {
+    margin: 1rem; /* Zorgt voor een marge van 1 rem rondom het ol-element */
+  }
+
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    padding: 0.5rem 1rem; /* Correcte syntax: gebruik een spatie in plaats van een puntkomma */
+  }
+
+  ol > li {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  ul > li {
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  ul > li:first-of-type {
+margin-top: 0.5rem;
+background-color:#9dacc488;
+
+  }
+
+  ul > li:last-of-type {
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+
+  ul > li:first-of-type::before {
+    content: "Explanation: "; /* Deze regel is toegevoegd */
+    color: rgb(53, 52, 52);
+  }
+
+  ul > li:last-of-type::before {
+    content: " Release Date: ";
+    display: inline-block;
+    width: 100%
+  }
+
+  
+  
+
